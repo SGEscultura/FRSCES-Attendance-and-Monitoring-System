@@ -4,8 +4,11 @@
 FRSCES is a JavaFX-based attendance monitoring system designed for schools. It uses QR code scanning to record student attendance and stores data in a centralized PostgreSQL database accessible by multiple devices over a local network.
 
 ## Team Members
-- (put your name here)
-- (put teammate names here)
+ Andrade, Lea M.
+ Figuron, Sophia Gabrielle E.
+ Franco, Leahvenchiteve M. 
+ Rollorata, Elebeth  M. 
+ Lim, Wesley Ernest O.
 
 ## Setup Instructions
 
