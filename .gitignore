@@ -1,0 +1,8 @@
+config.properties
+bin/
+fatjar/
+*.class
+*.rar
+jre/
+javafx/
+runtime/
