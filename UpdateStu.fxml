@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="637.0" style="-fx-background-color: #F4F7F5; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-padding: 30;">
+         <children>
+            <VBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label text="UPDATE STUDENT PROFILE" textFill="#2d5a43">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Locate student by ID to modify information" textFill="#757575">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+
+            <HBox alignment="CENTER" spacing="12.0" style="-fx-background-color: #E6EDE9; -fx-padding: 15; -fx-background-radius: 12;">
+               <children>
+                  <TextField fx:id="searchID" prefHeight="35.0" promptText="Enter Student ID (e.g. 2024-001)" style="-fx-background-radius: 8; -fx-border-color: #B4D5C3; -fx-border-radius: 8;" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleFindStudent" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #2d5a43; -fx-text-fill: white; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-weight: bold;" text="FIND" />
+               </children>
+            </HBox>
+
+            <VBox spacing="15.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label style="-fx-font-weight: bold;" text="Full Name" textFill="#555555" />
+                        <TextField fx:id="updateFullName" prefHeight="40.0" promptText="Enter full name" style="-fx-background-radius: 8;" />
+                     </children>
+                  </VBox>
+
+                  <HBox spacing="15.0">
+                     <children>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-weight: bold;" text="Student ID (Locked)" textFill="#555555" />
+                              <TextField fx:id="updateStudentID" editable="false" prefHeight="40.0" style="-fx-background-color: #F0F0F0; -fx-background-radius: 8; -fx-text-fill: #888888;" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-weight: bold;" text="Parent's Number" textFill="#555555" />
+                              <TextField fx:id="updateContactNumber" prefHeight="40.0" promptText="xxxx xxx xxxx" style="-fx-background-radius: 8;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+
+                  <HBox spacing="15.0">
+                     <children>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-weight: bold;" text="Grade Level" textFill="#555555" />
+                              <ComboBox fx:id="comboGradeLevel" maxWidth="1.7976931348623157E308" prefHeight="40.0" promptText="Select Grade" style="-fx-background-radius: 8;" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-weight: bold;" text="Section" textFill="#555555" />
+                              <ComboBox fx:id="comboSection" maxWidth="1.7976931348623157E308" prefHeight="40.0" promptText="Select Section" style="-fx-background-radius: 8;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #FF6961; -fx-text-fill: white; -fx-background-radius: 10; -fx-cursor: hand; -fx-font-weight: bold;" text="CANCEL" />
+                  <Button mnemonicParsing="false" onAction="#handleSaveChanges" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #2d5a43; -fx-text-fill: white; -fx-background-radius: 10; -fx-cursor: hand; -fx-font-weight: bold; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);" text="SAVE CHANGES" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color red="0.6470588445663452" green="0.843137264251709" blue="0.7686274647712708" />
+         </color>
+      </InnerShadow>
+   </effect>
+</VBox>

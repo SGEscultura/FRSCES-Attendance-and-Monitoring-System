@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="912.0" style="-fx-background-color: #F4F7F5; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="REAL-TIME ATTENDANCE MONITORING" textFill="#2d5a4c">
+               <font><Font name="System Bold" size="24.0" /></font>
+            </Label>
+            <HBox prefHeight="64.0" prefWidth="872.0">
+               <children>
+                  
+                  <TextField fx:id="scannerInput" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleHardwareScan" opacity="0.5" prefHeight="76.0" prefWidth="166.0" promptText="Waiting for QR scan..." style="-fx-background-radius: 5;" />
+               </children>
+            </HBox>
+
+            <TableView fx:id="scanTable" style="-fx-background-radius: 10; -fx-border-radius: 10;" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="100.0" text="TIME" />
+                <TableColumn prefWidth="180.0" text="NAME" />
+                <TableColumn prefWidth="180.0" text="PARENT'S CONTACT NUMBER" />
+                <TableColumn prefWidth="120.0" text="GRADE LEVEL" />
+                <TableColumn prefWidth="120.0" text="SECTION" />
+              </columns>
+               <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY" /></columnResizePolicy>
+            </TableView>
+
+            <Button mnemonicParsing="false" onAction="#handleResetScan" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #FF6961; -fx-background-radius: 12;" text="RESET LOG" textFill="WHITE">
+               <font><Font name="System Bold" size="14.0" /></font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
