@@ -12,7 +12,7 @@ FRSCES is a JavaFX-based attendance monitoring system designed for schools. It u
 
 ## Setup Instructions
 
-### Requirements
+## Requirements
 - Java 17
 - PostgreSQL 17
 - JavaFX SDK 17
@@ -22,7 +22,7 @@ FRSCES is a JavaFX-based attendance monitoring system designed for schools. It u
 2. Create database: `CREATE DATABASE frsces_db;`
 3. Import schema: `psql -U postgres -d frsces_db -f frsces_db.sql`
 
-### Running the App
+## Running the App
 1. Extract the deployment package
 2. Open `config.properties` and set `db.host` to the server PC's IP
 3. Double click `FRSCES.exe`
