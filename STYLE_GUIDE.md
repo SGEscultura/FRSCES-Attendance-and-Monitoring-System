@@ -1,6 +1,6 @@
 # FRSCES Style Guide
 
-## 2.1 — Naming Conventions
+### 2.1 — Naming Conventions
 
 | Element | Convention | Example |
 |---|---|---|
@@ -11,7 +11,7 @@
 | Constants | UPPER_SNAKE_CASE | MAX_RETRY_COUNT |
 | Database tables / fields | snake_case | student_id |
 
-## 2.2 — Formatting Rules
+### 2.2 — Formatting Rules
 
 | Rule | Team Decision |
 |---|---|
@@ -22,7 +22,7 @@
 | Blank lines between functions | 1 blank line |
 | Max function length | 50 lines |
 
-## 2.3 — Commenting Standards
+### 2.3 — Commenting Standards
 
 | Commenting Rule | Team Standard |
 |---|---|
@@ -32,7 +32,7 @@
 | TODO comment format | // TODO: description |
 | Language for comments | English |
 
-## 2.4 — Branch Naming Strategy
+### 2.4 — Branch Naming Strategy
 
 | Branch Type | Naming Format | Example |
 |---|---|---|
