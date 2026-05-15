@@ -26,3 +26,8 @@ FRSCES is a JavaFX-based attendance monitoring system designed for schools. It u
 1. Extract the deployment package
 2. Open `config.properties` and set `db.host` to the server PC's IP
 3. Double click `FRSCES.exe`
+
+### Features
+- QR Code scanning for attendance
+- Multi-device support over LAN/WiFi
+- PostgreSQL centralized database
